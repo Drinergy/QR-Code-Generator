@@ -24,8 +24,17 @@
         </div>
     </div>
 
+    <div class="qr-reader">
+        <button class="scanner" id="reader">QR Code Scanner</button>
+    </div>
 
     <script src="js/FileSaver.min.js"></script>
     <script src="js/index.js"></script>
+    <!--Redirect to QR Code Scanner-->
+    <script type="text/javascript">
+        document.getElementById("reader").onclick = function () {
+            location.href = "qrScanner.html";
+        };
+    </script>
 </body>
 </html>
